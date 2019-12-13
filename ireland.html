@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Discover Us</title>
+    <link href="stylees.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+	
+    <div class="top">
+		<h1> Ireland </h1>
+		
+		</div>
+			<div class="sidebar">
+			<a class="active" href="indexx.html">Home</a>
+			<a href="brazil.html">Brazil</a>
+			<a href="index.html">Iraq</a>
+			<a href="ireland.html">Ireland</a>
+			<a href="aboutus.html">About us</a>
+			<a href="contact.html">Contact us</a>
+			</div>
+
+		
+    <br>
+<img id='img' src="ire.jpg"  alt="Irish Building">
+<br><br>
+
+<div id="div3">
+<a href='#'onclick="loadXMLDoc()">Display All </a>
+</div>
+
+<br>
+
+<br><br>
+
+<br>
+<div id="div1">
+<h2>Food</h2>
+<p id='Food'></p>
+</div>
+
+<br>
+<div id="div2">
+ <h2>History</h2>
+<p id='History'></p>
+</div>
+
+<br><br>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp;
+  if (window.XMLHttpRequest) {
+    xmlhttp = new XMLHttpRequest();
+  } else {
+    // code for older browsers
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     showInfo(xmlhttp.responseXML); 
+     document.getElementById("div1").style.display = "block";
+     document.getElementById("div2").style.display = "block";
+    }
+  };
+  xmlhttp.open("GET", "Ireland.xml", true);
+  xmlhttp.send();
+
+  function showInfo(xml) {
+    var txt = "";
+    path = "Ireland/History";
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+            txt += result.childNodes[0].nodeValue + "<br>";
+            result = nodes.iterateNext();
+        } 
+    // Code For Internet Explorer
+    } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        xml.setProperty("SelectionLanguage", "XPath");
+        nodes = xml.selectNodes(path);
+        for (i = 0; i < nodes.length; i++) {
+            txt += nodes[i].childNodes[0].nodeValue + "<br>";
+        }
+    }
+    document.getElementById("History").innerHTML =  txt;
+
+    txt = "";
+    path = "Ireland/Food";
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+            txt += result.childNodes[0].nodeValue + "<br>";
+            result = nodes.iterateNext();
+        } 
+    // Code For Internet Explorer
+    } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        xml.setProperty("SelectionLanguage", "XPath");
+        nodes = xml.selectNodes(path);
+        for (i = 0; i < nodes.length; i++) {
+            txt += nodes[i].childNodes[0].nodeValue + "<br>";
+        }
+    }
+    document.getElementById("Food").innerHTML =  txt;
+ }
+}
+</script>
+  </body>
+</html>

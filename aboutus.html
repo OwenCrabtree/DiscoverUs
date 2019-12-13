@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+html {
+  box-sizing: border-box;
+} 
+ 
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+  margin-left: 440px;
+  width: 120%;
+					
+				
+}
+
+.container {
+  padding: 0 16px;
+  
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+
+.top  {
+			
+					padding: 0.05em ;
+					color: white;
+					background-color: red;
+					clear: left;
+					text-align: center;
+					font-size: 16px;
+					
+			
+			   }
+
+.button:hover {
+  background-color: #555;
+}
+	.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+		
+
+</style>
+</head>
+<body>
+
+<div class="top">
+		<h1> About us </h1>
+	
+	</div>
+	
+<div class="sidebar">
+			<a class="active" href="indexx.html">Home</a>
+			<a href="index.html">Iraq</a>
+			<a href="ireland.html">Ireland</a>
+			<a href="aboutus.html">About us</a>
+			<a href="contact.html">Contact us</a>
+			</div>
+			
+<div class="row">
+  <div class="column"style ="width:40%">
+    <div class="card">
+      <img src="photos/team.jpg" alt="Sarah" style="width:100%">
+      <div class="container"style ="width:100%">
+        <h2>Sarah, Florence, Owen and Izaskun </h2>
+        <p>We are second year Computing students at NCI, for more information click on the button above to send us an email.</p>
+        
+		 
+		 
+      
+      </div>
+    </div>
+  </div>
+
+  
+    <p><button onclick="alert('Contact us on the following email: x17105595@student.ie')">Email us</button></p>
+  
+    </div>
+  
+  
+	
+
+</body>
+</html>

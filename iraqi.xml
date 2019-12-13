@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IRAQ>
+
+	<CD>
+
+		<COUNTY> Maysan </COUNTY>
+
+		<PEOPLE>1,059,644 people </PEOPLE>
+
+		
+
+	</CD>
+
+	<CD>
+
+		<COUNTY>  Nineveh </COUNTY>
+
+		<PEOPLE>3,500,000 people </PEOPLE>
+
+
+	</CD>
+
+	<CD>
+
+		<COUNTY>Baghdad</COUNTY>
+
+		<PEOPLE>7,665,000 people</PEOPLE>
+
+		
+	</CD>
+
+	<CD>
+
+		<COUNTY>Babil</COUNTY>
+
+		<PEOPLE>1,931,700 people</PEOPLE>
+
+	
+
+	</CD>
+
+	<CD>
+
+		<COUNTY>Anbar</COUNTY>
+
+		<PEOPLE>1,661,000 people</PEOPLE>
+
+	
+
+	</CD>
+
+	<CD>
+
+		<COUNTY>Basra</COUNTY>
+
+		<PEOPLE>2,796,000 people</PEOPLE>
+
+		
+
+	</CD>
+
+	<CD>
+
+		<COUNTY>Halabja</COUNTY>
+
+		<PEOPLE>186,000 people</PEOPLE>
+
+
+	</CD>
+
+  	<CD>
+  <COUNTY>Al-Qadisiyah</COUNTY>
+
+	<PEOPLE>1,320,000 people </PEOPLE>
+
+	</CD>
+
+	<CD>
+
+	<COUNTY>Diyala </COUNTY>
+
+		<PEOPLE>1,548,000 people</PEOPLE>
+
+	
+	</CD>
+
+	<CD>
+
+	<COUNTY>Salah al-Din </COUNTY>
+
+		<PEOPLE>1,509,000 people</PEOPLE>
+
+	
+
+	</CD>
+
+	<CD>
+
+	<COUNTY>Dhi Qar</COUNTY>
+
+	<PEOPLE>1,979,000 people</PEOPLE>
+
+	
+
+	</CD>
+
+</IRAQ>

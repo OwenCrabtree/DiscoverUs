@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 220px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.top  {
+			
+					padding: 0.05em ;
+					color: white;
+					background-color: gray;
+					clear: left;
+					text-align: center;
+					font-size: 16px;
+					
+			
+			   }
+	.phot {
+	margin-left: 280px;
+	}
+</style>
+</head>
+<body>
+
+
+
+<div class="sidebar">
+			<a class="active" href="indexx.html">Home</a>
+			<a href="brazil.html">Brazil</a>
+			<a href="index.html">Iraq</a>
+			<a href="ireland.html">Ireland</a>
+			<a href="aboutus.html">About us</a>
+			<a href="contact.html">Contact us</a>
+			</div>
+			
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="brazil">Brazil</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Ireland">Ireland</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="tell us more about your country..." style="height:200px"></textarea>
+
+    <p><button onclick="alert('THANKS FOR SHARING MORE ABOUT YOUR COUNTRY')">Sumbit</button></p>
+  </form>
+</div>
+<div class="phot">
+			<ul>
+	 
+				
+				<li><img src="photos/praia.jpg" alt="praia"></li>
+				
+				
+		<br>
+		
+		</div>
+
+</body>
+</html>

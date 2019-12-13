@@ -1,0 +1,145 @@
+@media screen and (min-device-width: 320px) and (max-device-width: 800px){
+			
+		}
+			
+			
+		
+		
+		
+		
+		
+		body {
+			
+			background-color: white; 
+			font-family: Arial, Helvetica, sans-serif;
+			
+			
+			}
+				
+				
+		.top  {
+			
+					padding: 0.05em ;
+					color: white;
+					background-color: orange;
+					clear: left;
+					text-align: center;
+					font-size: 16px;
+					
+			
+			   }
+			   
+		.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 260px;
+  padding: 1px 16px;
+  height: 1000px;
+  
+}
+
+		
+				
+	
+				
+				
+		.hq { 
+			
+			font-size: 2em;
+			color: black;
+			
+			}
+		
+		
+				
+		.slider {
+		
+				
+				margin:auto;
+				margin-left: 280px;
+				overflow: hidden;
+				
+	
+				
+					
+				}
+				
+		.slider ul {
+		
+				width: 300%;
+				height: 0%;
+				display: flex;
+				padding: 0;
+				
+				
+				animation: cambiar 20s infinite;
+				}
+				
+		.slider li{
+		
+				width: 80%;
+				list-style: none;
+					
+				}
+				
+		.slider img {
+		
+				
+			
+			width: 80%;
+			
+				}
+					
+				
+				
+		@keyframes cambiar {
+				0% {margin-left: 0;}
+				30% {margin-left: 0;}
+				
+				35% {margin-left: -100%;}
+				65% {margin-left: -100%;}
+				
+				70% {margin-left: -200%;}
+				100% {margin-left: -200%;}
+				
+		
+		.button { 
+			margin-left: 280px;
+			
+		}			
+		.footer {
+				
+				color: white;
+					background-color: gray;
+					text-align: center;
+					padding: 0.5em;
+					
+				}
+					
+					
+				
